@@ -1,0 +1,699 @@
+/* Navbar Background */
+.custom-navbar {
+  background-color: #002147; /* Dark Blue */
+  padding: 15px 0;
+}
+
+/* Logo Image */
+.logo-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Makes image round */
+  object-fit: cover; /* Prevents stretching */
+  border: 2px solid white;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 20px;
+  transition: 0.3s;
+}
+
+/* Hover Effect */
+.navbar-nav .nav-link:hover {
+  color: #00bfff;
+}
+
+/* Active Link */
+.navbar-nav .nav-link.active {
+  color: #00bfff;
+}
+
+/* HERO SECTION */
+.hero-section {
+  padding: 80px 0;
+  background: #f4f8ff;
+}
+
+/* TEXT */
+.hero-text h1 {
+  font-size: 55px;
+  font-weight: 800;
+  color: #002147;
+}
+
+.hero-text p {
+  font-size: 18px;
+  color: #555;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+/* BUTTONS */
+.hero-buttons .btn {
+  margin-right: 15px;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-size: 16px;
+}
+
+/* PRIMARY BUTTON */
+.btn-primary {
+  background-color: #002147;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #004080;
+}
+
+/* OUTLINE BUTTON */
+.btn-outline-primary {
+  border: 2px solid #002147;
+  color: #002147;
+}
+
+.btn-outline-primary:hover {
+  background-color: #002147;
+  color: white;
+}
+
+/* CIRCULAR IMAGE */
+.image-circle {
+  width: 380px;
+  height: 380px;
+  margin: auto;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 8px solid #002147;
+  animation: float 4s ease-in-out infinite;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.image-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero-text {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .hero-text h1 {
+    font-size: 38px;
+  }
+
+  .image-circle {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+/* SECTION */
+.tours-section {
+  padding: 80px 0;
+  background: #ffffff;
+}
+
+/* TITLE */
+.section-title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  color: #002147;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+/* GRID */
+.tours-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+/* CARD */
+.tour-card {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+/* IMAGE */
+.tour-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+/* HOVER EFFECT */
+.tour-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.2);
+}
+
+.tour-card:hover img {
+  transform: scale(1.1);
+}
+
+/* TEXT OVERLAY */
+.tour-content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
+  color: white;
+}
+
+.tour-content h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.tour-content p {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 30px;
+  }
+
+  .tour-card img {
+    height: 220px;
+  }
+}
+
+/* CTA SECTION */
+.cta-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #002147, #004080);
+  color: white;
+  text-align: center;
+}
+
+/* CONTAINER */
+.cta-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+/* TITLE */
+.cta-section h2 {
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+/* TEXT */
+.cta-section p {
+  font-size: 18px;
+  opacity: 0.9;
+  margin-bottom: 25px;
+}
+
+/* PHONE */
+.cta-contact .phone {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  padding: 10px 20px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 30px;
+}
+
+/* BUTTON */
+.cta-button {
+  display: inline-block;
+  padding: 14px 35px;
+  background: #00bfff;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.cta-button:hover {
+  background: white;
+  color: #002147;
+  transform: translateY(-3px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .cta-section h2 {
+    font-size: 28px;
+  }
+
+  .cta-section p {
+    font-size: 16px;
+  }
+}
+
+/* FOOTER */
+.footer {
+  background: #001a33;
+  color: white;
+  padding: 60px 20px 20px;
+}
+
+/* CONTAINER */
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* BOX */
+.footer-box h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.footer-box h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #00bfff;
+}
+
+.footer-box p {
+  font-size: 14px;
+  opacity: 0.85;
+  line-height: 1.6;
+}
+
+/* LINKS */
+.footer-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-box ul li {
+  margin-bottom: 10px;
+}
+
+.footer-box ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.footer-box ul li a:hover {
+  color: #00bfff;
+  opacity: 1;
+}
+
+/* BOTTOM */
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .footer-container {
+    text-align: center;
+  }
+}
+
+/* REVIEWS SECTION */
+.reviews-section {
+  padding: 80px 20px;
+  background: #f4f8ff;
+  text-align: center;
+}
+
+/* TITLE */
+.reviews-section h2 {
+  font-size: 36px;
+  font-weight: 800;
+  color: #002147;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+/* GRID */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* CARD */
+.review-card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-8px);
+}
+
+/* TRIPADVISOR LOGO */
+.ta-logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 10px;
+  opacity: 0.9;
+}
+
+/* STARS */
+.stars {
+  color: #ffb400;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* TEXT */
+.review-card p {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* NAME */
+.review-card h4 {
+  font-size: 14px;
+  color: #002147;
+  font-weight: 600;
+}
+
+/* SCROLL ANIMATION STYLE*/
+
+.hidden {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.8s ease;
+}
+
+/* Visible state */
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Smooth hover upgrade */
+.tour-card,
+.review-card {
+  transition:
+    transform 0.6s ease,
+    box-shadow 0.6s ease;
+}
+
+.image-circle {
+  transition: all 0.5s ease;
+}
+
+.image-circle:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 25px 50px rgba(0, 191, 255, 0.3);
+  border: 6px solid #00bfff;
+}
+
+/* BUTTON MICRO INTERACTION */
+.btn,
+.cta-button {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.3s ease;
+}
+
+.btn:hover,
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* SMOOTH PAGE SCROLL */
+html {
+  scroll-behavior: smooth;
+}
+
+/* VIEW MORE BUTTON */
+.view-more-btn {
+  display: inline-block;
+  padding: 14px 35px;
+  background: linear-gradient(135deg, #002147, #004080);
+  color: white;
+  border-radius: 30px;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* HOVER EFFECT */
+.view-more-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  color: white;
+}
+
+/* CLICK EFFECT */
+.view-more-btn:active {
+  transform: scale(0.97);
+}
+
+.view-more-btn {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1s ease forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* PAGE LOAD ANIMATION */
+body {
+  opacity: 0;
+  animation: pageLoad 1.2s ease forwards;
+}
+
+@keyframes pageLoad {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* HERO TEXT ANIMATION */
+.hero-text {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideLeft 1.2s ease forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* HERO IMAGE ANIMATION */
+.image-circle {
+  opacity: 0;
+  transform: scale(0.8);
+  animation: zoomIn 1.2s ease forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* TOUR CARDS ANIMATION */
+.tour-card {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 1s ease forwards;
+}
+
+.tour-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.tour-card:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.tour-card:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.tour-card:nth-child(4) {
+  animation-delay: 0.8s;
+}
+.tour-card:nth-child(5) {
+  animation-delay: 1s;
+}
+.tour-card:nth-child(6) {
+  animation-delay: 1.2s;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* REVIEW CARDS */
+.review-card {
+  opacity: 0;
+  animation: fadeIn 1.2s ease forwards;
+}
+
+.review-card:nth-child(1) {
+  animation-delay: 0.5s;
+}
+.review-card:nth-child(2) {
+  animation-delay: 0.8s;
+}
+.review-card:nth-child(3) {
+  animation-delay: 1.1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* FEMALE GUIDE SINGLE */
+.female-guide-section {
+  padding: 80px 0;
+  background: #f8fbff;
+  text-align: center;
+}
+
+.guide-single {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.guide-card {
+  max-width: 450px;
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: 0.4s ease;
+}
+
+.guide-card:hover {
+  transform: translateY(-8px);
+}
+
+.guide-card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.guide-content {
+  padding: 25px;
+}
+
+.guide-content h3 {
+  font-size: 22px;
+  color: #002147;
+  margin-bottom: 10px;
+}
+
+.guide-content p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.guide-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #002147;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.guide-btn:hover {
+  background: #004080;
+}

@@ -1,0 +1,405 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f7fb;
+  overflow-x: hidden;
+}
+
+/* NAVBAR */
+.custom-navbar {
+  background: #071739;
+  padding: 15px 0;
+}
+
+.logo-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #49b6ff;
+}
+
+/* HERO */
+.about-hero {
+  min-height: 90vh;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg");
+
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  animation: fadeUp 1s ease;
+}
+
+.hero-content p {
+  max-width: 700px;
+  margin: auto;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  animation: fadeUp 1.5s ease;
+}
+
+/* STORY */
+.story-section {
+  padding: 100px 0;
+}
+
+.story-img {
+  overflow: hidden;
+  border-radius: 30px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.story-img img {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.story-img:hover img {
+  transform: scale(1.08);
+}
+
+.story-text h2 {
+  font-size: 3rem;
+  color: #071739;
+  margin-bottom: 20px;
+}
+
+.story-text p {
+  color: #666;
+  line-height: 1.9;
+}
+
+/* STATS */
+.stats-section {
+  background: #071739;
+  color: white;
+  padding: 80px 0;
+}
+
+.stat-box h2 {
+  font-size: 3rem;
+  color: #49b6ff;
+  font-weight: bold;
+}
+
+/* WHY US */
+.why-section {
+  padding: 100px 0;
+}
+
+.why-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 25px;
+  text-align: center;
+  height: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: 0.4s;
+}
+
+.why-card:hover {
+  transform: translateY(-10px);
+}
+
+.why-card h4 {
+  color: #071739;
+  margin-bottom: 15px;
+}
+
+/* GALLERY */
+.gallery-section {
+  background: #eef4fb;
+  padding: 100px 0;
+}
+
+.gallery-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.gallery-title h2 {
+  font-size: 3rem;
+  color: #071739;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.gallery-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.gallery-card:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  padding: 20px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+}
+
+/* CTA SECTION */
+.cta-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #002147, #004080);
+  color: white;
+  text-align: center;
+}
+
+.cta-section h2 {
+  font-size: 3rem;
+}
+
+.cta-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 35px;
+  border-radius: 50px;
+  text-decoration: none;
+  background: #49b6ff;
+  color: white;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background: white;
+  color: #071739;
+}
+
+/* FOOTER */
+.footer {
+  background: #001a33;
+  color: white;
+  padding: 60px 20px 20px;
+}
+
+/* CONTAINER */
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* BOX */
+.footer-box h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.footer-box h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #00bfff;
+}
+
+.footer-box p {
+  font-size: 14px;
+  opacity: 0.85;
+  line-height: 1.6;
+}
+
+/* LINKS */
+.footer-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-box ul li {
+  margin-bottom: 10px;
+}
+
+.footer-box ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.footer-box ul li a:hover {
+  color: #00bfff;
+  opacity: 1;
+}
+
+/* BOTTOM */
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .footer-container {
+    text-align: center;
+  }
+}
+
+/* PAGE LOAD ANIMATION */
+body {
+  opacity: 0;
+  animation: pageLoad 1.2s ease forwards;
+}
+
+@keyframes pageLoad {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* HERO TEXT ANIMATION */
+.hero-text {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideLeft 1.2s ease forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* HERO IMAGE ANIMATION */
+.image-circle {
+  opacity: 0;
+  transform: scale(0.8);
+  animation: zoomIn 1.2s ease forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* TOUR CARDS ANIMATION */
+.tour-card {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 1s ease forwards;
+}
+
+.tour-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.tour-card:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.tour-card:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.tour-card:nth-child(4) {
+  animation-delay: 0.8s;
+}
+.tour-card:nth-child(5) {
+  animation-delay: 1s;
+}
+.tour-card:nth-child(6) {
+  animation-delay: 1.2s;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* REVIEW CARDS */
+.review-card {
+  opacity: 0;
+  animation: fadeIn 1.2s ease forwards;
+}
+
+.review-card:nth-child(1) {
+  animation-delay: 0.5s;
+}
+.review-card:nth-child(2) {
+  animation-delay: 0.8s;
+}
+.review-card:nth-child(3) {
+  animation-delay: 1.1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
