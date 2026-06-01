@@ -34,11 +34,25 @@
   background-repeat: no-repeat;
   color: white;
 
-  min-height: 650px; /* Increased height */
+  min-height: 650px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+/* Background Image Animation */
+.tour-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  z-index: -1;
+
+  animation: heroZoom 6s ease-in-out infinite alternate;
 }
 
 /* Hero Text Animation */
@@ -213,18 +227,14 @@
   }
 }
 
-/* ==========================
-   NAVBAR SCROLL STYLE
-========================== */
+/* NAVBAR SCROLL STYLE */
 .nav-scrolled {
   padding: 8px 0 !important;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
   transition: 0.3s ease;
 }
 
-/* ==========================
-   HERO ANIMATION
-========================== */
+/*HERO ANIMATION */
 .hero-hidden {
   opacity: 0;
   transform: translateY(30px);
@@ -236,9 +246,7 @@
   transition: 1s ease;
 }
 
-/* ==========================
-   SCROLL REVEAL BASE
-========================== */
+/* SCROLL REVEAL BASE */
 .hidden {
   opacity: 0;
   transform: translateY(50px);
@@ -250,17 +258,13 @@
   transform: translateY(0);
 }
 
-/* ==========================
-   BUTTON CLICK EFFECT
-========================== */
+/* BUTTON CLICK EFFECT */
 .btn.clicked {
   transform: scale(0.95);
   transition: 0.2s;
 }
 
-/* =========================
-   INTRO SECTION
-========================= */
+/* INTRO SECTION */
 .tour-intro {
   padding: 90px 0;
   background: #ffffff;
