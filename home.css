@@ -422,8 +422,9 @@
   font-weight: 600;
 }
 
-/* SCROLL ANIMATION STYLE*/
+/* SCROLL ANIMATION STYLE */
 
+/* Hidden state */
 .hidden {
   opacity: 0;
   transform: translateY(60px);
@@ -696,4 +697,91 @@ body {
 
 .guide-btn:hover {
   background: #004080;
+}
+
+/* FEMALE TRAVEL GUIDE SECTION */
+.female-guide-section {
+  padding: 80px 20px;
+  background: #f9f9f9;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Section Title */
+.section-title {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto 50px;
+  line-height: 1.6;
+}
+
+/* Center Card */
+.guide-single {
+  display: flex;
+  justify-content: center;
+}
+
+/* Simple Card */
+.guide-card {
+  background: #ffffff;
+  max-width: 600px;
+  padding: 40px 30px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.guide-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ROUND IMAGE */
+.guide-card img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #002147;
+  margin-bottom: 20px;
+}
+
+/* Name */
+.guide-content h3 {
+  font-size: 24px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+/* Paragraph */
+.guide-content p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+/* Button */
+.guide-btn {
+  display: inline-block;
+  padding: 10px 22px;
+  background: #002147;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.guide-btn:hover {
+  background: #002147;
 }
