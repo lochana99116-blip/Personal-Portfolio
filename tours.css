@@ -434,24 +434,6 @@
   line-height: 1.6;
 }
 
-/* PAGE LOAD ANIMATION */
-body {
-  opacity: 0;
-  animation: pageLoad 1.2s ease forwards;
-}
-
-@keyframes pageLoad {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 /* HERO TEXT ANIMATION */
 .hero-text {
   opacity: 0;
